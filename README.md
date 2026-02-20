@@ -21,3 +21,38 @@ The SMS Communication Platform is designed to facilitate seamless SMS communicat
    ```bash
    git clone https://github.com/LightOfChristmasDriveThru/sms-communication-platform.git
    cd sms-communication-platform
+   ```
+
+2. **Install Dependencies**:  
+   For the server, navigate to the backend folder and run:
+   ```bash
+   npm install
+   ```
+   For the frontend, navigate to the frontend folder and run:
+   ```bash
+   npm install
+   ```
+
+3. **Set Environment Variables**:  
+   Create a `.env` file in the root directory for the server and add necessary configuration like Twilio API keys.
+   
+4. **Run the Application**:  
+   Start the backend server:  
+   ```bash
+   npm start
+   ```
+   Start the frontend application:  
+   ```bash
+   npm start
+   ```
+
+## Development Guidelines
+- **Branching**: Use feature branches for new features and bug fixes. Naming convention: `feature/{feature-name}` or `bugfix/{bug-name}`.
+- **Code Review**: All code should be reviewed before merging into the main branch.
+- **Testing**: Write unit tests for all new features and ensure existing tests are passing.
+- **Documentation**: Keep documentation updated and clear for all major features and changes.
+
+---
+
+### Contribution
+Contributions are welcome! Please follow the guidelines above to submit your changes.
