@@ -1,0 +1,25 @@
+# Exclude the following files and directories from Docker builds
+
+# Node modules
+node_modules/
+
+# Build outputs
+dist/
+build/
+
+# Logs
+*.log
+
+# Environment variables
+.env
+
+# Temporary files
+*.tmp
+*.temp
+
+# Version control
+.git/
+.gitignore
+
+# Docker files
+Dockerfile*
