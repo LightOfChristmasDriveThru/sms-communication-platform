@@ -1,7 +1,11 @@
 const fs = require('fs');
 const path = require('path');
 
-const WAITLIST_FILE = path.join(__dirname, '../../data/waitlist.json');
+// In Vercel serverless, only /tmp is writable. In local/Express, use /data
+const isVercelEnv = process.env.VERCEL === '1';
+const WAITLIST_FILE = isVercelEnv
+    ? '/tmp/waitlist.json'
+    : path.join(__dirname, '../../data/waitlist.json');
 
 // Ensure data directory exists
 const dataDir = path.dirname(WAITLIST_FILE);
