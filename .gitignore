@@ -1,2 +1,4 @@
 backend/data/
 .vercel/
+node_modules/
+package-lock.json
