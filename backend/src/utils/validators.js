@@ -30,4 +30,14 @@ function validateSenderId(senderId) {
     return typeof senderId === 'string' && senderId.length > 0;
 }
 
-module.exports = { validatePhoneNumber, validateMessageLength, validateSenderId };
+/**
+ * Function to validate email
+ * @param {string} email - The email to validate
+ * @returns {boolean} - True if valid, false otherwise
+ */
+function validateEmail(email) {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+}
+
+module.exports = { validatePhoneNumber, validateMessageLength, validateSenderId, validateEmail };
