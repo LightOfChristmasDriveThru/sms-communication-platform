@@ -20,4 +20,7 @@ Thumbs.db
 
 # Build output
 dist/
-build/backend/data/
+build/
+
+# Runtime data
+backend/data/
