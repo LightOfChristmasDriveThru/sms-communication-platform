@@ -70,10 +70,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 form.style.display = 'none';
                 formSuccess.style.display = 'block';
 
-                // Reset form for future use
-                form.reset();
-                form.style.display = 'block';
-
                 // Scroll to success message
                 formSuccess.scrollIntoView({ behavior: 'smooth' });
             } else {
