@@ -2,27 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "package.json",
-      "use": "@vercel/node"
-    },
-    {
-      "src": "frontend/**",
-      "use": "@vercel/static"
+      "src": "backend/src/index.js",
+      "use": "@vercel/node",
+      "config": {
+        "includeFiles": "frontend/**"
+      }
     }
   ],
   "routes": [
-    {
-      "src": "/api/(.*)",
-      "dest": "backend/src/index.js"
-    },
-    {
-      "src": "/styles.css",
-      "dest": "frontend/styles.css"
-    },
-    {
-      "src": "/form.js",
-      "dest": "frontend/form.js"
-    },
     {
       "src": "/(.*)",
       "dest": "backend/src/index.js"
