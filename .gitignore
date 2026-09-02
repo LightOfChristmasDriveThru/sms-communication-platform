@@ -1,27 +1,2 @@
-# Node.js
-node_modules/
-package-lock.json
-
-# npm
-npm-debug.log*
-
-# Environment variables
-.env
-
-# IDE files
-.idea/
-.vscode/
-*.sublime-workspace
-*.sublime-project
-
-# OS-specific patterns
-.DS_Store
-Thumbs.db
-
-# Build output
-dist/
-build/
-
-# Runtime data
 backend/data/
-public/
+.vercel/

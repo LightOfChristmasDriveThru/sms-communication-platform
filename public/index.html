@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Missed Lead Responder - Never Lose a Lead Again</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">Respond Fast</div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Your leads book with someone else while you're sleeping</h1>
+            <p class="subtitle">Get a suggested reply in 30 seconds so you can respond before they move on.</p>
+            <div class="hero-visual">
+                <div class="visual-placeholder">
+                    <div class="mobile-mockup">
+                        <div class="mockup-header">You</div>
+                        <div class="mockup-message-received">
+                            <div class="mockup-text">Hi, I'm calling about in-home care for my mom. She's 78, had a fall last month...</div>
+                            <div class="mockup-time">5:47 PM</div>
+                        </div>
+                        <div class="mockup-suggestion">
+                            <div class="suggestion-label">Suggested reply</div>
+                            <div class="suggestion-text">Hi there! Thanks for calling. We specialize in fall-risk care. Let's schedule an intake call tomorrow morning. Does 10am work?</div>
+                            <div class="suggestion-action">← Send in 30 seconds</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#form" class="cta-button">Join Waitlist</a>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problem">
+        <div class="container">
+            <h2>How many leads go cold?</h2>
+            <p class="problem-intro">Every missed lead is a lost consult. And in homecare, that's revenue and team stress.</p>
+
+            <div class="pain-points">
+                <div class="pain-point">
+                    <div class="pain-icon">📞</div>
+                    <h3>Leads come in after hours</h3>
+                    <p>5pm call, 6am response. By then, they've already booked with someone else.</p>
+                </div>
+                <div class="pain-point">
+                    <div class="pain-icon">😰</div>
+                    <h3>Your team is swamped</h3>
+                    <p>Answering intake calls, managing visits, doing care. Who has time for missed leads?</p>
+                </div>
+                <div class="pain-point">
+                    <div class="pain-icon">💰</div>
+                    <h3>Lost revenue</h3>
+                    <p>One missed lead per week = one lost consult. That's 50+ consults per year.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="solution">
+        <div class="container">
+            <h2>Respond before they book elsewhere</h2>
+            <p class="solution-intro">We detect missed leads and suggest a reply in 30 seconds.</p>
+
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Lead comes in</h3>
+                    <p>Phone, email, or web form. We're watching.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>You get a suggestion</h3>
+                    <p>Reply template tailored to this lead and your team's style.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Send in 30 seconds</h3>
+                    <p>Edit if you want. Send as-is if it's perfect. Either way, you win.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Consult booked</h3>
+                    <p>Response time matters. You got there first.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Waitlist Form Section -->
+    <section class="form-section" id="form">
+        <div class="container">
+            <h2>Join the waitlist</h2>
+            <p class="form-intro">We're launching this month. Be first to see the demo.</p>
+
+            <form class="waitlist-form" id="waitlistForm">
+                <div class="form-group">
+                    <label for="email">Email address *</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="you@homecare.com"
+                        required
+                    >
+                    <span class="form-error" id="emailError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="leadsPerWeek">How many leads do you miss per week? (optional)</label>
+                    <input
+                        type="text"
+                        id="leadsPerWeek"
+                        name="leadsPerWeek"
+                        placeholder="e.g., 2-3"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="platform">Where do most leads come from? (optional)</label>
+                    <select id="platform" name="platform">
+                        <option value="">-- Select one --</option>
+                        <option value="Phone">Phone calls</option>
+                        <option value="Email">Email</option>
+                        <option value="Web Form">Web form submissions</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="submit-button" id="submitBtn">Join Waitlist</button>
+                </div>
+
+                <div class="form-success" id="formSuccess" style="display: none;">
+                    <div class="success-message">
+                        <div class="success-icon">✓</div>
+                        <h3>Thanks for joining!</h3>
+                        <p>You're on the waitlist. We'll reach out this week to send you the demo.</p>
+                    </div>
+                </div>
+
+                <div class="form-error-message" id="formError" style="display: none;">
+                    <p id="formErrorText"></p>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Missed Lead Responder. Built for homecare owners.</p>
+        </div>
+    </footer>
+
+    <script src="form.js"></script>
+</body>
+</html>
