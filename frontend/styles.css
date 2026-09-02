@@ -339,6 +339,17 @@ body {
     font-size: 0.95rem;
 }
 
+.required {
+    color: var(--color-error);
+    font-weight: 600;
+}
+
+.optional {
+    color: var(--color-text-light);
+    font-weight: 400;
+    font-size: 0.85rem;
+}
+
 .form-group input,
 .form-group select {
     width: 100%;

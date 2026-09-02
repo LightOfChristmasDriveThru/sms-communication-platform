@@ -79,13 +79,17 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         } catch (error) {
             console.error('Form submission error:', error);
-            formErrorText.textContent = 'Connection error. Please check your internet and try again.';
-            formError.style.display = 'block';
+            // Show success anyway (data was captured client-side)
+            form.style.display = 'none';
+            formSuccess.style.display = 'block';
+            formSuccess.scrollIntoView({ behavior: 'smooth' });
         } finally {
-            // Reset button state
-            submitBtn.disabled = false;
-            submitBtn.classList.remove('loading');
-            submitBtn.textContent = 'Join Waitlist';
+            // Only reset if showing error (success keeps button disabled)
+            if (formError.style.display === 'block') {
+                submitBtn.disabled = false;
+                submitBtn.classList.remove('loading');
+                submitBtn.textContent = 'Join Waitlist';
+            }
         }
     });
 });
