@@ -1,0 +1,24 @@
+{
+  "name": "sms-communication-platform",
+  "version": "0.1.0",
+  "description": "Missed Lead Responder - Never lose a lead to a slow response",
+  "main": "backend/src/index.js",
+  "scripts": {
+    "start": "node backend/src/index.js",
+    "dev": "node backend/src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "homecare",
+    "leads",
+    "sms",
+    "communication"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {}
+}
